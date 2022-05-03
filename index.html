@@ -6,6 +6,7 @@
     <link rel="stylesheet" href="./vendor/normalize.css"/>
     <link rel="stylesheet" href="./pages/index.css" />
     <link rel="icon" href="./logo/logo_web.png" />
+    <script src="./scripts/index.js" defer></script>
     <title>How to brew</title>
   </head>
   <body>
@@ -25,10 +26,10 @@
           <a href="./glasses.html" target="_self" class="header__link">Виды бокалов</a>
         </nav>
       </header>
-      <!-- сделать меню-бургер https://www.youtube.com/watch?v=chJQofBSx94&t=0s&ab_channel=%D0%A4%D1%80%D0%B8%D0%BB%D0%B0%D0%BD%D1%81%D0%B5%D1%80%D0%BF%D0%BE%D0%B6%D0%B8%D0%B7%D0%BD%D0%B8-IT%D0%B8%D1%84%D1%80%D0%B8%D0%BB%D0%B0%D0%BD%D1%81-->
+
       <main class="content">
         <div class="boiz__intro">
-          <h1 class="boiz__intro_text">Intro</h1>
+          <h1 class="boiz__intro_text">Куда пойти</h1>
           <div class="boiz__intro_content">
             <div class="intro__languages">
               <a
@@ -37,7 +38,7 @@
                 id="intro__language_es"
                 onclick="text_es()"
                 ><img
-                  src="./logo/logo_flags/spain.png"
+                  src="./imgs/logo/logo_flags/spain.png"
                   class="language__flag"
                 />ES</a
               >
@@ -47,7 +48,7 @@
                 id="intro__language_rus"
                 onclick="text_rus()"
                 ><img
-                  src="./logo/logo_flags/rus.png"
+                  src="./imgs/logo/logo_flags/rus.png"
                   class="language__flag"
                 />РУС</a
               >
@@ -57,200 +58,93 @@
                 id="intro__language_en"
                 onclick="text_en()"
                 ><img
-                  src="./logo/logo_flags/en.png"
+                  src="./imgs/logo/logo_flags/en2.png"
                   class="language__flag"
                 />EN</a
               >
             </div>
 
             <div class="intro__texts">
-              <h2 class="intro__text intro__text_es" id="intro__text_es">
-                ¡Hola amigos! <br />
-                Soy Dmitry Shishkov. Aquí hablaremos sobre los finde, cerveza y
-                cómo prepararla. <br />
-                En
-                <a href="#" target="_blank" class="intro__text_link">
-                  Brewing Simulator
-                </a>
-                puedes intentar elaborar tu propia cerveza. <br />
-                En la sección
-                <a
-                  href="./adondeir.html"
-                  target="_blank"
-                  class="intro__text_link"
-                >
-                  Dónde ir
-                </a>
-                hay un mapa de Moscú con bares.<br />
-                Y en la sección
-                <a href="#" target="_blank" class="intro__text_link"
-                  >Un poco de cerveza
-                </a>
-                una breve información para principiantes.
-              </h2>
+              <h2 class="intro__text intro__text_es" id="intro__text_es">La elaboración de la cerveza es el mismo arte que la elaboración del vino: milenario, con sus sutilezas, recetas secretas y maestros reconocidos. Hay tantos tipos de cerveza en el mundo que es casi imposible enumerarlos todos. No hay lugares menos interesantes donde probar esta bebida. Casi todas las ciudades tienen una cervecería, y algunas valen la pena solo con mirarlas.</h2>
 
-              <h2 class="intro__text intro__text_rus" id="intro__text_rus">
-                Привет! <br />
-                С вами Дима, и это сайт посвящен вечеру пятницы, пиву и как его
-                сварить. <br />
-                В
-                <a href="#" target="_blank" class="intro__text_link">
-                  Симуляторе Варки
-                </a>
-                можно попробовать самому сварить пиво <br />
-                В разделе
-                <a
-                  href="./adondeir.html"
-                  target="_blank"
-                  class="intro__text_link"
-                >
-                  Куда пойти
-                </a>
-                лежит карта Москвы с барами <br />
-                И в разделе
-                <a href="#" target="_blank" class="intro__text_link">
-                  Немного о Пиве
-                </a>
-                краткая инфа для начинающих
-              </h2>
+              <h2 class="intro__text intro__text_rus" id="intro__text_rus">Пивоварение — такое же искусство, как и виноделие: древнее, со своими тонкостями, секретными рецептами и признанными мастерами. В мире существует столько сортов пива, что вряд ли можно все их перечислить. Интересных заведений, где можно попробовать этот напиток, — не меньше. Практически в каждом городе есть пивной бар, и некоторые из них стоят того, чтобы просто посмотреть на них.</h2>
 
-              <h2 class="intro__text intro__text_en" id="intro__text_en">
-                Hello. <br />
-                My name is Dima, and here we will speak about weekends, beer and
-                how to brew. <br />
-                In the
-                <a href="#" target="_blank" class="intro__text_link">
-                  Brewing Simulator
-                </a>
-                you can try to brew your own beer <br />
-                In the
-                <a
-                  href="./adondeir.html"
-                  target="_blank"
-                  class="intro__text_link"
-                  >Where to go
-                </a>
-                section there is a map of Moscow with bars <br />
-                And in the section
-                <a href="#" target="_blank" class="intro__text_link"
-                  >About Beer
-                </a>
-                brief for beginners
-              </h2>
+              <h2 class="intro__text intro__text_en" id="intro__text_en">Brewing is the same art as winemaking: ancient, with its subtleties, secret recipes and recognized masters. There are so many types of beer in the world that it is hardly possible to list them all. There are no less interesting places where you can try this drink. There is a beer bar in almost every city, and some of them are worth it just to look at them.</h2>
             </div>
           </div>
         </div>
 
+        <div class="beerclass">
+          <h3 class="beerclass__subtype">Бар Шона — самый старый паб в мире</h3>
+          <p class="beerclass__definition">На первый взгляд бар Шона, расположенный в ирландском городе Атлон на границе графств Уэстмит и Роскоммон, ничем не выделяется среди подобных колоритных заведений. Заведение, которое находится в исторической части города возле руин нормандского замка, признано старейшим пабом в Европе в 2004 году, но теперь его владельцы желают доказать, что бар Шона является старейшим баром в мире.</article>
+          <article class="beerclass__article">О далёком прошлом бара Шона долгое время не догадывались даже его владельцы. В 70-х годах XX века во время проведения ремонтных работ сотрудники обнаружили необычную конструкцию помещения и древние артефакты. Под множественными слоями обоев и краски скрывались стены, выполненные в виде плетня из ивовых прутьев и лошадиных волос, обмазанных глиной. Такой метод постройки несущих конструкций был типичен для так называемых тёмных веков европейской истории.</article>
+          <img class="beerclass__image" src="imgs/imgs_adygea/firstBar.jpg" alt="Картинка первый бар снаружи">
+          <article class="beerclass__article">Сотрудники Национального музея Ирландии изучили древние артефакты, обнаруженные при ремонте здания, например, старинные монеты, а также провели радиоуглеродный анализ отдельных компонентов его конструкции – глины, дерева и др. Согласно результатам анализа, история бара Шона началась более 1100 лет тому назад, в 900 году н. э. Это значит, что пиво в этом пабе подавали ещё до поражения и изгнания викингов из Ирландии, до англо-норманнского вторжения и до изобретения виски, эля и тёмного пива, которые сегодня воспринимаются как синоним традиционного ирландского паба.</article>
+          <img class="beerclass__image" src="imgs/imgs_adygea/firstBar2.jpg" alt="Картинка первый бар внутри">
+        </div>
+
         <div class="boiz__description">
           <h2 class="description__text_main">
-            Кроме пива здесь будем выкладывать наши впечатления о поездках
+            В пивной культуре очень много различных видов баров:
           </h2>
           <div class="description__content">
             <div class="description__adygea">
               <ul class="adygea__text_header">
-                Например про Адыгею:
-                <li class="adygea__text_content">Славы по реке каждый день</li>
-                <li class="adygea__text_content">Турпоход на конях</li>
-                <li class="adygea__text_content">Поездки на квадроциклах</li>
-                <li class="adygea__text_content">Экскурсии на ферму</li>
-                <li class="adygea__text_content">Кормление енотов</li>
-                <li class="adygea__text_content">
-                  А ещё будет лучше посмотреть видео
-                </li>
+                Обычно они делятся на:
+                <li class="adygea__text_content">Сервис-бар</li>
+                <li class="adygea__text_content">Лаунж-бар</li>
+                <li class="adygea__text_content">Лобби-бар</li>
+                <li class="adygea__text_content">Диско-бар</li>
+                <li class="adygea__text_content">Пул-бар</li>
+                <li class="adygea__text_content">Пив-бар</li>
               </ul>
 
               <div class="description__imgs">
                 <div class="description__imgs_gragient"></div>
                 <div class="description__imgs_roll">
                   <img
-                    src="./imgs/imgs_adygea/g1.jpg"
+                    src="./imgs/imgs_adygea/ServiceBar.jpg"
                     class="scroll__img"
-                    alt=""
+                    alt="Сервис-бар"
                   />
                   <img
-                    src="./imgs/imgs_adygea/v1.jpg"
+                    src="./imgs/imgs_adygea/LoundgeBar.jpg"
                     class="scroll__img"
-                    alt=""
+                    alt="Лаунж-бар"
                   />
                   <img
-                    src="./imgs/imgs_adygea/v2.jpg"
+                    src="./imgs/imgs_adygea/LobbiBar.jpg"
                     class="scroll__img"
-                    alt=""
+                    alt="Лобби-бар"
                   />
                   <img
-                    src="./imgs/imgs_adygea/v3.jpg"
+                    src="./imgs/imgs_adygea/DiscoBar.jpg"
                     class="scroll__img"
-                    alt=""
+                    alt="Диско-бар"
                   />
                   <img
                     src="./imgs/imgs_adygea/g2.jpg"
                     class="scroll__img"
-                    alt=""
+                    alt="Пул-бар"
                   />
                   <img
-                    src="./imgs/imgs_adygea/g3.jpg"
+                    src="./imgs/imgs_adygea/pivBar.jpg"
                     class="scroll__img"
-                    alt=""
-                  />
-                  <img
-                    src="./imgs/imgs_adygea/g4.jpg"
-                    class="scroll__img"
-                    alt=""
-                  />
-                  <img
-                    src="./imgs/imgs_adygea/v5.jpg"
-                    class="scroll__img"
-                    alt=""
-                  />
-                  <img
-                    src="./imgs/imgs_adygea/g5.jpg"
-                    class="scroll__img"
-                    alt=""
-                  />
-                  <img
-                    src="./imgs/imgs_adygea/g6.jpg"
-                    class="scroll__img"
-                    alt=""
-                  />
-                  <img
-                    src="./imgs/imgs_adygea/g7.jpg"
-                    class="scroll__img"
-                    alt=""
-                  />
-                  <img
-                    src="./imgs/imgs_adygea/v6.jpg"
-                    class="scroll__img"
-                    alt=""
-                  />
-                  <img
-                    src="./imgs/imgs_adygea/v7.jpg"
-                    class="scroll__img"
-                    alt=""
-                  />
-                  <img
-                    src="./imgs/imgs_adygea/g8.jpg"
-                    class="scroll__img"
-                    alt=""
-                  />
-                  <img
-                    src="./imgs/imgs_adygea/g9.jpg"
-                    class="scroll__img"
-                    alt=""
+                    alt="Пив-бар"
                   />
                 </div>
               </div>
             </div>
-            <!--оставить местро для последующих блоков-->
           </div>
         </div>
-        <script src="index.js"></script>
+
       </main>
       <footer class="footer">
         <a
           href="#"
           target="_blank"
           class="footer__author"
-          >&copy; ДимДимыч & Mr.Drog</a
+          >&copy; BOIZ Brewery</a
         >
         <div class="footer__columns">
           <nav class="footer__column">

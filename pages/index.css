@@ -71,7 +71,7 @@
 
 .boiz__intro {
   width: 80%;
-  margin: 50px auto;
+  margin: 50px auto 0 auto;
   display: flex;
   flex-direction: column;
 }
@@ -207,10 +207,6 @@
   list-style-position: inside;
 }
 
-.adygea__text_content:last-child {
-  list-style: none;
-}
-
 .description__imgs {
   align-items: center;
   display: flex;
@@ -258,6 +254,56 @@
   margin: auto 10px;
   display: flex;
   align-items: center;
+}
+
+.beerclass {
+  margin: 10px 100px 50px 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.beerclass__subtype {
+  margin: 30px 0 0 0;
+  width: 100%;
+  text-align: center;
+  font-size: 30px;
+}
+
+.beerclass__definition {
+  box-sizing: border-box;
+  border: 4px solid black;
+  background-color: rgb(230, 228, 222); 
+  padding: 20px 30px;
+  border-radius: 10px;
+  margin: 30px 0 0 0;
+  width: 100%;
+
+}
+
+.beerclass__article {
+  margin: 30px 0 0 0;
+  width: 100%;
+  text-align: left;
+}
+
+.beerclass__image {
+  width: 100%;
+  margin: 30px 0 0 0;
+}
+
+.beerclass__varieties {
+  box-sizing: border-box;
+  border: 4px solid black;
+  background-color: #f7f2d6; 
+  padding: 20px 40px;
+  border-radius: 10px;
+  margin: 30px 0 0 0;
+  width: 100%;
+}
+
+.beer__varieties-item {
+  margin: 10px 0px;
 }
 
 .footer {
