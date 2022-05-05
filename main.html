@@ -5,13 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" href="./vendor/normalize.css"/>
     <link rel="stylesheet" href="./pages/main.css"/>
-    <link rel="icon" href="./logo/logo_web.png" />
+    <link rel="icon" href="./imgs/logo/logo_web.png" />
     <title>How to brew</title>
   </head>
   <body>
     <div class="page">
       <header class="header">
-        <a href="#" target="_blank" class="header__img">
+        <a href="./main.html" target="_self" class="header__img">
           <img
             class="logo__header"
             alt="logo BOIZ BREWERY"
@@ -25,22 +25,84 @@
           <a href="./glasses.html" target="_self" class="header__link">Виды бокалов</a>
         </nav>
       </header>
-      <!-- сделать меню-бургер https://www.youtube.com/watch?v=chJQofBSx94&t=0s&ab_channel=%D0%A4%D1%80%D0%B8%D0%BB%D0%B0%D0%BD%D1%81%D0%B5%D1%80%D0%BF%D0%BE%D0%B6%D0%B8%D0%B7%D0%BD%D0%B8-IT%D0%B8%D1%84%D1%80%D0%B8%D0%BB%D0%B0%D0%BD%D1%81-->
+
       <main class="content">
 
-        <section class="navigation">
-          <h1 class="navigation__title">Классификация пива</h1>
-          <p class="navigation__text">Хотя на сегодняшний день существует большое обилие видов и сортов пива. 
-            Ни смотря ни на что, на сегодняшний день так и не создали единственную международную классификации.
-            Но существуют отдельные признаки, по которым классифицируют различные сорта этого напитка. 
-            Ниже мы попробуем разобрать какое бывает пиво: основные виды, сорта и стили.</p>
-          <h2 class="navigation__index">Содержание</h2>
-          <nav class="navigation__box">
-            <div class="navigation__plate"><img class="navigation__arrow" src="imgs/imgs_beerclass/arrow-yellow.jpg"><a class="navigation__link" href="#beer__fermentation">"Классификация по способу брожения"</a></div>
-            <div class="navigation__plate"><img class="navigation__arrow" src="imgs/imgs_beerclass/arrow-yellow.jpg"><a class="navigation__link" href="#beer__color">"Классификация по цвету"</a></div>
-            <div class="navigation__plate"><img class="navigation__arrow" src="imgs/imgs_beerclass/arrow-yellow.jpg"><a class="navigation__link" href="#beer__density">"Классификация по плотности сусла (по крепости)"</a></div>
-            <div class="navigation__plate"><img class="navigation__arrow" src="imgs/imgs_beerclass/arrow-yellow.jpg"><a class="navigation__link" href="#beer__material">"Классификация по сырью"</a></div>
-           </nav>
+        <section class="lead">
+          <h1 class="lead__title">BOIZ Brewery</h1>
+          <p class="lead__text">"Мы — некомерческая домашняя пивоварня BOIZ Brewery. Наша цель объединять людей вокруг нашего увлечения. Этот сайт просто о пиве и о событиях вокруг нашего дела. Всем Welcome!"</p>
+          <img class="lead__img" src="./imgs/logo/boiz_logo2.png">
+        </section>
+
+        <section class="ivents">
+            <div class="ivents__grid">
+              <div class="ivents__item">
+                <img class="ivents__img" src="./imgs/imgs_main/Firstbeer.jpg">
+                <div class="ivents__hover"></div>
+                <h2 class="ivent__title">КАК СВАРИТЬ ПИВО?</h2>
+                <p class="ivent__discr">Это видео пригодится тем, кто ещё ничего не знает о домашнем пивоварении, но хочет начать. Женя рассказывает какие есть виды домашнего пивоварения и что нужно, чтобы приготовить своё первое домашнее пиво. Мы и опытные участники нашего сообщества будем рады ответить!</p>
+                <p class="ivent__date">02.12.21</p>
+              </div>
+
+              <div class="ivents__item">
+                <img class="ivents__img" src="./imgs/imgs_main/OpenBrew.jpg">
+                <div class="ivents__hover"></div>
+                <h2 class="ivent__title">КАК ОТКРЫТЬ ПИВОВАРНЮ</h2>
+                <p class="ivent__discr">Начинающий пивовар часто не догадывается, какой путь ему предстоит. Увеличивая объёмы производимой продукции, будь то домашнее производство или серьёзная пивоварня, можно столкнуться с неизбежными проблемами, вроде отсутствия места, необходимых условий или оборудования.</p>
+                <p class="ivent__date">15.01.22</p>
+              </div>
+
+              <div class="ivents__item">
+                <img class="ivents__img" src="./imgs/imgs_main/Overview.jpg">
+                <div class="ivents__hover"></div>
+                <h2 class="ivent__title">КАК ВЫБРАТЬ ПИВОВАРНЮ?</h2>
+                <p class="ivent__discr">Дениса пивом не пои - дай поговорить о домашних пивоварнях. Он изучил их все и изложил свои знания в этом коротком получасовом ролике, для тех, кто не хочет тратить время и разбираться как выбрать пивоварню. </p>
+                <p class="ivent__date">03.03.22</p>
+              </div>
+
+              <div class="ivents__item">
+                <img class="ivents__img" src="./imgs/imgs_main/MeadBeer.jpg">
+                <div class="ivents__hover"></div>
+                <h2 class="ivent__title">ГОТОВИМ МЕДОВУХУ</h2>
+                <p class="ivent__discr">"Как сделать вкусную медовуху дома?" - самый частый вопрос, по которому просили снять видео, и вот наконец-то я рад показать вам классический рецепт варёной медовухи. То, что мы сделаем сегодня - это основа, та база, которую необходимо научиться делать, прежде чем пытаться разнообразить вкус получившейся медовухи разными специями, хмелем и так далее. </p>
+                <p class="ivent__date">11.04.22</p>
+              </div>
+
+              <div class="ivents__item">
+                <img class="ivents__img" src="./imgs/imgs_main/BlackWhite.jpg">
+                <div class="ivents__hover"></div>
+                <h2 class="ivent__title">ТЕМНОЕ И СВЕТЛОЕ</h2>
+                <p class="ivent__discr">Резаное пиво — смесь темного и светлого сортов, которые наливают в кружку последовательно, в два слоя. При этом можно наливать как с четкой границей между слоями, так и просто смешивать пиво пополам, как получится.</p>
+                <p class="ivent__date">19.05.22</p>
+              </div>
+
+              <div class="ivents__item">
+                <img class="ivents__img" src="./imgs/imgs_main/BestSsckrBeer.jpg">
+                <div class="ivents__hover"></div>
+                <h2 class="ivent__title">СТРИМ: Любимое пиво</h2>
+                <p class="ivent__discr">Стрим с подсписчиками, где мы обсудим ваши предпочтения, обменяемся топами и поговорим про то, как выбрать свой любимый сорт.</p>
+                <p class="ivent__date">10.06.22</p>
+              </div>
+
+            </div>
+
+
+
+        </section>
+
+        <section class="profileEdit">
+          <form class="profileEdit__container">
+            <h2 class="profileEdit__title">Мы рады видеть вас в нашем комьюнити! Если вы хотите стать нашим спикером, оставьте свои контакты ниже:</h2>
+            <input class="profileEdit__nameInput" type="text" placeholder="Ваше имя">
+            <img class="profileEdit__line" src="./imgs/imgs_main/header-line.png" alt="line">
+            <input class="profileEdit__nameInput" type="text" placeholder="Ваша тема">
+            <img class="profileEdit__line" src="./imgs/imgs_main/header-line.png" alt="line">
+            <input class="profileEdit__subtitleInput" type="email"  placeholder="Ваша почта">
+            <img class="profileEdit__line" src="./imgs/imgs_main/header-line.png" alt="line">
+            <button class="profileEdit__button-submit" type="submit">Отправить</button>
+        </form>
+
+
         </section>
 
       </main>

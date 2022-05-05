@@ -2,7 +2,8 @@ Website dedicated to beer culture for a private home brewery.
 
 The site was developed using technologies:
 
-- HTML5 CSS
+- HTML5
+- CSS
 - Flex layout
 - Grid layout
 - Adaptability

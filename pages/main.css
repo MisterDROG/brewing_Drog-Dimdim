@@ -1,5 +1,5 @@
 .page {
-  min-width: 868px;
+  min-width: 500px;
   max-width: 1920px;
   margin: 0 auto;
   font-family: "Helvetica Neue", Arial, sans-serif;
@@ -70,170 +70,235 @@
 }
 
 .content {
-  width: 80%;
-  display: flex;
+  width: 100%;
   flex-direction: column;
   margin: auto;
 }
 
-.span-bold {
-  font-weight: bold;
-}
-
-.navigation {
-  margin: 50px 0 0 0;
-  line-height: 25px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.navigation__index {
-  padding: 0;
-  margin: 20px 0 0 0;
-}
-
-.navigation__title {
-  margin: 0 0 0 0;
-  padding: 0;
-  text-align: center;
-  font-size: 40px;
-
-}
-
-.navigation__box {
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-}
-
-.navigation__plate {
-  display: flex;
-  align-items: center;
-  margin: 20px 0 0 0;
-  
-}
-
-.navigation__arrow {
-  height: 50px;
-  transition: .3s;
-
-}
-
-.navigation__arrow:hover {
-  transform: rotate(90deg);
-}
-  
-
-.navigation__link {
-  color: black;
-  font-weight: bold;
-  text-decoration: none;
+.lead {
   position: relative;
-  flex-grow: 1;
-  margin-left: 10px;
-}
-
-.navigation__plate:hover > .navigation__arrow {
-  transform: rotate(90deg);
-}
-
-.navigation__link:hover::before {
-  white-space: pre;
-  content: "  К разделу:  ";
-}
-
-.navigation__link::after {
-  content: "";
-  background-color: #f7f2d6;
-  position: absolute;
-  top: 0;
-  left: 100%;
-  width: 0;
-  height: 100%;
-  z-index: -1;
-  transition: .3s;
-}
-
-.navigation__link:hover::after {
-  content: "";
-  background-color: #f7f2d6;
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  z-index: -1;
-}
-
-.navigation__text {
-  margin: 30px 0 0 0;
-  padding: 0;
-}
-
-.articles {
-  margin: 50px 0 0 0;
-  line-height: 25px;
-
-}
-
-.articles:last-child {
-  margin: 50px 0 50px 0;
-}
-
-.articles__type {
+  background: linear-gradient(black 70%, white);
+  height: 700px;
   margin: 0;
-  padding: 0;
-  text-align: center;
-  font-size: 25px;
 }
 
-.beerclass {
+.lead__title {
+  color: white;
+  width: 40%;
+  margin: 0;
+  position: absolute;
+  left: 10%;
+  top: 20%;
+  font-size: 70px;
+}
+
+.lead__text {
+  color: white;
+  width: 35%;
+  margin: 0;
+  position: absolute;
+  left: 10%;
+  top: 45%;
+  font-size: 20px;
+}
+
+.lead__img {
+  position: absolute;
+  right: 5%;
+  top: 10%;
+  width: 400px;
+  z-index: 0;
+}
+
+.ivents {
+  margin: 0 10%;
+}
+
+.ivents__grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  gap: 30px;
+
+}
+
+.ivents__item {
+  width: 100%;
+  height: 300px;
+  position: relative;
+
+}
+
+.ivents__item:hover {
+  cursor: pointer;
+}
+
+.ivents__item:hover .ivent__title {
+  bottom: 80%;
+}
+
+.ivents__item:hover .ivent__date {
+  bottom: 70%;
+}
+
+.ivents__item:hover .ivent__discr {
+  opacity: 1;
+}
+
+.ivents__item:hover .ivents__hover {
+  opacity: .7;
+}
+
+.ivents__img {
+  position: absolute;
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  object-position: center;
+  z-index: 0;
+
+}
+
+.ivents__hover {
+  background-color: black;
+  width: 100%;
+  height: 100%;
+  opacity: 0.5;
+}
+
+.ivent__title {
+  color: white;
+  margin: 0 30px 0 30px;
+  position: absolute;
+  bottom: 20%;
+  left: 0;
+  transition: 0.1s linear;
+}
+
+.ivent__discr {
+  opacity: 0;
+  color: white;
+  margin: 0 30px 0 30px;
+  position: absolute;
+  top: 40%;
+  left: 0;
+  transition: 0.5s linear;
+}
+
+.ivent__date {
+  color: white;
+  margin: 0 30px 0 30px;
+  position: absolute;
+  bottom: 10%;
+  left: 0;
+  transition: 0.1s linear;
+}
+
+.profileEdit {
+  background: linear-gradient(white 60%, black);
+}
+
+.profileEdit__container {
   display: flex;
-  flex-direction: column;
   align-items: center;
-}
-
-.beerclass__subtype {
-  margin: 30px 0 0 0;
+  flex-direction: column;
+  margin: 70px 0 0 0;
   width: 100%;
-  text-align: left;
+  height: 500px;
+  border-radius: 20px;
+  position: relative;
 }
 
-.beerclass__definition {
-  box-sizing: border-box;
-  border: 4px solid black;
-  background-color: #f7f2d6; 
-  padding: 20px 30px;
-  border-radius: 10px;
-  margin: 30px 0 0 0;
-  width: 100%;
+.profileEdit__title {
+  width: 90%;
+  font-weight: 900;
+  font-size: 24px;
+  line-height: 29px;
+  margin: 20px 0 40px 0;
+  text-align: center;
 
 }
 
-.beerclass__article {
-  margin: 30px 0 0 0;
-  width: 100%;
-  text-align: left;
+.profileEdit__nameInput {
+  margin: 30px 0 5px 0;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  border: 0;
+  width: 60%;
+  background-color: transparent;
+
 }
 
-.beerclass__image {
-  width: 100%;
-  margin: 30px 0 0 0;
+.profileEdit__line {
+  width: 60%;
 }
 
-.beerclass__varieties {
-  box-sizing: border-box;
-  border: 4px solid black;
-  background-color: #f7f2d6; 
-  padding: 20px 40px;
-  border-radius: 10px;
-  margin: 30px 0 0 0;
-  width: 100%;
+.profileEdit__subtitleInput {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  margin: 30px 0 5px 0;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  border: 0;
+  width: 60%;
+  background-color: transparent;
 }
 
-.beer__varieties-item {
-  margin: 10px 0px;
+.profileEdit__button-submit {
+  background-color: black;
+  display: flex;
+  margin: 40px 0 0 0;
+  padding: 20px;
+  justify-content: center;
+  cursor: pointer;
+  color: white;
+  width: 40%;
+  border: 0;
+  border-radius: 30px;
+  font-weight: bold;
+}
+
+.profileEdit__button-submit:hover {
+  background-color: greenyellow;
+  color: black;
+  box-shadow: 10px 10px 5px grey;
+}
+
+.profileEdit__button-save {
+  background-color: black;
+  display: flex;
+  margin: 40px 0 0 0;
+  padding: 20px;
+  justify-content: center;
+  cursor: pointer;
+
+}
+
+.profileEdit__save-text {
+  margin: 0;
+  color: white;
+
+}
+
+.profileEdit__cross {
+  width: 25px;
+  height: 25px;
+  position: absolute;
+  top: -25px;
+  right: -25px;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 800px) {
+ .profileEdit__cross {
+  top: -30px;
+  right: 0px;        
+  }    
 }
 
 .footer {
