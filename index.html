@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" href="./vendor/normalize.css"/>
-    <link rel="stylesheet" href="./pages/index.css" />
+    <link rel="stylesheet" href="./pages/index.css"/>
     <link rel="icon" href="./imgs/logo/logo_web.png" />
     <script src="./scripts/index.js" defer></script>
     <title>How to brew</title>
@@ -12,7 +12,7 @@
   <body>
     <div class="page">
       <header class="header">
-        <a href="./main.html" target="_self" class="header__img">
+        <a href="./index.html" target="_self" class="header__img">
           <img
             class="logo__header"
             alt="logo BOIZ BREWERY"
@@ -20,123 +20,93 @@
           />
         </a>
         <nav class="header__links">
-          <a href="./main.html" target="_self" class="header__link">Главная</a>
-          <a href="./index.html" target="_self" class="header__link">Куда пойти</a>
+          <a href="./index.html" target="_self" class="header__link">Главная</a>
+          <a href="./where.html" target="_self" class="header__link">Куда пойти</a>
           <a href="./classification.html" target="_self" class="header__link">Виды пива</a>
           <a href="./glasses.html" target="_self" class="header__link">Виды бокалов</a>
         </nav>
       </header>
 
       <main class="content">
-        <div class="boiz__intro">
-          <h1 class="boiz__intro_text">Куда пойти</h1>
-          <div class="boiz__intro_content">
-            <div class="intro__languages">
-              <a
-                href="#"
-                class="intro__language intro__language_es"
-                id="intro__language_es"
-                onclick="text_es()"
-                ><img
-                  src="./imgs/logo/logo_flags/spain.png"
-                  class="language__flag"
-                />ES</a
-              >
-              <a
-                href="#"
-                class="intro__language intro__language_rus"
-                id="intro__language_rus"
-                onclick="text_rus()"
-                ><img
-                  src="./imgs/logo/logo_flags/rus.png"
-                  class="language__flag"
-                />RU</a
-              >
-              <a
-                href="#"
-                class="intro__language intro__language_en"
-                id="intro__language_en"
-                onclick="text_en()"
-                ><img
-                  src="./imgs/logo/logo_flags/en2.png"
-                  class="language__flag"
-                />EN</a
-              >
-            </div>
 
-            <div class="intro__texts">
-              <h2 class="intro__text intro__text_es" id="intro__text_es">Hay tantos tipos de cerveza en el mundo que es casi imposible enumerarlos todos. No hay lugares menos interesantes donde probar esta bebida. Casi todas las ciudades tienen una cervecería, y algunas valen la pena solo con mirarlas.</h2>
+        <section class="lead">
+          <h1 class="lead__title">BOIZ Brewery</h1>
+          <p class="lead__text">"Мы — некомерческая домашняя пивоварня BOIZ Brewery. Наша цель объединять людей вокруг нашего увлечения. Этот сайт просто о пиве и о событиях вокруг нашего дела. Всем Welcome!"</p>
+          <img class="lead__img" src="./imgs/logo/boiz_logo2.png">
+        </section>
 
-              <h2 class="intro__text intro__text_rus" id="intro__text_rus">В мире существует столько сортов пива, что вряд ли можно все их перечислить. Интересных заведений, где можно попробовать этот напиток, — не меньше. Практически в каждом городе есть пивной бар, и некоторые из них стоят того, чтобы просто посмотреть на них.</h2>
-
-              <h2 class="intro__text intro__text_en" id="intro__text_en">There are so many types of beer in the world that it is hardly possible to list them all. There are no less interesting places where you can try this drink. There is a beer bar in almost every city, and some of them are worth it just to look at them.</h2>
-            </div>
-          </div>
-        </div>
-
-        <div class="beerclass">
-          <h3 class="beerclass__subtype">Бар Шона — самый старый паб в мире</h3>
-          <p class="beerclass__definition">На первый взгляд бар Шона, расположенный в ирландском городе Атлон на границе графств Уэстмит и Роскоммон, ничем не выделяется среди подобных колоритных заведений. Заведение, которое находится в исторической части города возле руин нормандского замка, признано старейшим пабом в Европе в 2004 году, но теперь его владельцы желают доказать, что бар Шона является старейшим баром в мире.</article>
-          <article class="beerclass__article">О далёком прошлом бара Шона долгое время не догадывались даже его владельцы. В 70-х годах XX века во время проведения ремонтных работ сотрудники обнаружили необычную конструкцию помещения и древние артефакты. Под множественными слоями обоев и краски скрывались стены, выполненные в виде плетня из ивовых прутьев и лошадиных волос, обмазанных глиной. Такой метод постройки несущих конструкций был типичен для так называемых тёмных веков европейской истории.</article>
-          <img class="beerclass__image" src="imgs/imgs_adygea/firstBar.jpg" alt="Картинка первый бар снаружи">
-          <article class="beerclass__article">Сотрудники Национального музея Ирландии изучили древние артефакты, обнаруженные при ремонте здания, например, старинные монеты, а также провели радиоуглеродный анализ отдельных компонентов его конструкции – глины, дерева и др. Согласно результатам анализа, история бара Шона началась более 1100 лет тому назад, в 900 году н. э. Это значит, что пиво в этом пабе подавали ещё до поражения и изгнания викингов из Ирландии, до англо-норманнского вторжения и до изобретения виски, эля и тёмного пива, которые сегодня воспринимаются как синоним традиционного ирландского паба.</article>
-          <img class="beerclass__image" src="imgs/imgs_adygea/firstBar2.jpg" alt="Картинка первый бар внутри">
-        </div>
-
-        <div class="boiz__description">
-          <h2 class="description__text_main">
-            В пивной культуре очень много различных видов баров:
-          </h2>
-          <div class="description__content">
-            <div class="description__adygea">
-              <ul class="adygea__text_header">
-                Обычно они делятся на:
-                <li class="adygea__text_content">Сервис-бар</li>
-                <li class="adygea__text_content">Лаунж-бар</li>
-                <li class="adygea__text_content">Лобби-бар</li>
-                <li class="adygea__text_content">Диско-бар</li>
-                <li class="adygea__text_content">Пул-бар</li>
-                <li class="adygea__text_content">Пив-бар</li>
-              </ul>
-
-              <div class="description__imgs">
-                <div class="description__imgs_gragient"></div>
-                <div class="description__imgs_roll">
-                  <img
-                    src="./imgs/imgs_adygea/ServiceBar.jpg"
-                    class="scroll__img"
-                    alt="Сервис-бар"
-                  />
-                  <img
-                    src="./imgs/imgs_adygea/LoundgeBar.jpg"
-                    class="scroll__img"
-                    alt="Лаунж-бар"
-                  />
-                  <img
-                    src="./imgs/imgs_adygea/LobbiBar.jpg"
-                    class="scroll__img"
-                    alt="Лобби-бар"
-                  />
-                  <img
-                    src="./imgs/imgs_adygea/DiscoBar.jpg"
-                    class="scroll__img"
-                    alt="Диско-бар"
-                  />
-                  <img
-                    src="./imgs/imgs_adygea/g2.jpg"
-                    class="scroll__img"
-                    alt="Пул-бар"
-                  />
-                  <img
-                    src="./imgs/imgs_adygea/pivBar.jpg"
-                    class="scroll__img"
-                    alt="Пив-бар"
-                  />
-                </div>
+        <section class="ivents">
+            <div class="ivents__grid">
+              <div class="ivents__item" id="001">
+                <img class="ivents__img" src="./imgs/imgs_main/Firstbeer.jpg">
+                <div class="ivents__hover"></div>
+                <h2 class="ivent__title">КАК СВАРИТЬ ПИВО?</h2>
+                <p class="ivent__discr">Это видео пригодится тем, кто ещё ничего не знает о домашнем пивоварении, но хочет начать. Женя рассказывает какие есть виды домашнего пивоварения и что нужно, чтобы приготовить своё первое домашнее пиво. Мы и опытные участники нашего сообщества будем рады ответить!</p>
+                <p class="ivent__date">02.12.21</p>
               </div>
+
+              <div class="ivents__item" id="002">
+                <img class="ivents__img" src="./imgs/imgs_main/OpenBrew.jpg">
+                <div class="ivents__hover"></div>
+                <h2 class="ivent__title">КАК ОТКРЫТЬ ПИВОВАРНЮ</h2>
+                <p class="ivent__discr">Начинающий пивовар часто не догадывается, какой путь ему предстоит. Увеличивая объёмы производимой продукции, будь то домашнее производство или серьёзная пивоварня, можно столкнуться с неизбежными проблемами, вроде отсутствия места, необходимых условий или оборудования.</p>
+                <p class="ivent__date">15.01.22</p>
+              </div>
+
+              <div class="ivents__item" id="003">
+                <img class="ivents__img" src="./imgs/imgs_main/Overview.jpg">
+                <div class="ivents__hover"></div>
+                <h2 class="ivent__title">КАК ВЫБРАТЬ ПИВОВАРНЮ?</h2>
+                <p class="ivent__discr">Дениса пивом не пои - дай поговорить о домашних пивоварнях. Он изучил их все и изложил свои знания в этом коротком получасовом ролике, для тех, кто не хочет тратить время и разбираться как выбрать пивоварню. </p>
+                <p class="ivent__date">03.03.22</p>
+              </div>
+
+              <div class="ivents__item" id="004">
+                <img class="ivents__img" src="./imgs/imgs_main/MeadBeer.jpg">
+                <div class="ivents__hover"></div>
+                <h2 class="ivent__title">ГОТОВИМ МЕДОВУХУ</h2>
+                <p class="ivent__discr">"Как сделать вкусную медовуху дома?" - самый частый вопрос, по которому просили снять видео, и вот наконец-то я рад показать вам классический рецепт варёной медовухи. То, что мы сделаем сегодня - это основа, та база, которую необходимо научиться делать, прежде чем пытаться разнообразить вкус получившейся медовухи разными специями, хмелем и так далее. </p>
+                <p class="ivent__date">11.04.22</p>
+              </div>
+
+              <div class="ivents__item" id="005">
+                <img class="ivents__img" src="./imgs/imgs_main/BlackWhite.jpg">
+                <div class="ivents__hover"></div>
+                <h2 class="ivent__title">ТЕМНОЕ И СВЕТЛОЕ</h2>
+                <p class="ivent__discr">Резаное пиво — смесь темного и светлого сортов, которые наливают в кружку последовательно, в два слоя. При этом можно наливать как с четкой границей между слоями, так и просто смешивать пиво пополам, как получится.</p>
+                <p class="ivent__date">19.05.22</p>
+              </div>
+
+              <div class="ivents__item" id="006">
+                <img class="ivents__img" src="./imgs/imgs_main/BestSsckrBeer.jpg">
+                <div class="ivents__hover"></div>
+                <h2 class="ivent__title">СТРИМ: Любимое пиво</h2>
+                <p class="ivent__discr">Стрим с подсписчиками, где мы обсудим ваши предпочтения, обменяемся топами и поговорим про то, как выбрать свой любимый сорт.</p>
+                <p class="ivent__date">10.06.22</p>
+              </div>
+
             </div>
-          </div>
-        </div>
+
+            <div class="popup">
+              <iframe class="popup__inframe" id="ytplayer" type="text/html" src="" allowfullscreen></iframe>
+              <img class="popup__cross" src="./imgs/imgs_main/CloseIcon.png" alt="cross">
+            </div>
+
+
+        </section>
+
+        <section class="profileEdit">
+          <form class="profileEdit__container">
+            <h2 class="profileEdit__title">Мы рады видеть вас в нашем комьюнити! Если вы хотите стать нашим спикером, оставьте свои контакты ниже:</h2>
+            <input class="profileEdit__nameInput" type="text" placeholder="Ваше имя">
+            <img class="profileEdit__line" src="./imgs/imgs_main/header-line.png" alt="line">
+            <input class="profileEdit__nameInput" type="text" placeholder="Ваша тема">
+            <img class="profileEdit__line" src="./imgs/imgs_main/header-line.png" alt="line">
+            <input class="profileEdit__subtitleInput" type="email"  placeholder="Ваша почта">
+            <img class="profileEdit__line" src="./imgs/imgs_main/header-line.png" alt="line">
+            <button class="profileEdit__button-submit" type="submit">Отправить</button>
+          </form>
+        </section>
 
       </main>
       <footer class="footer">
@@ -182,8 +152,8 @@
           </nav>
           <nav class="footer__column">
             <p class="footer__title">Навигация</p>
-            <a href="./main.html" target="_blank" class="footer__link">Главная</a>
-            <a href="./index.html" target="_blank" class="footer__link">Куда пойти</a>
+            <a href="./index.html" target="_blank" class="footer__link">Главная</a>
+            <a href="./where.html" target="_blank" class="footer__link">Куда пойти</a>
             <a href="./classification.html" target="_blank" class="footer__link">Немного о Пиве</a>
           </nav>
         </div>

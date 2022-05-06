@@ -1,78 +1,37 @@
-function changeItem() {
-    document.getElementById('intro__text_es').style.opacity = '1';
-    document.getElementById('intro__text_rus').style.opacity = '0';
-  }// функция, которая сработает при наведении.
-  //она означает - выбрать элемент к Id у которого надо что-то изменить.
-  // когда в скобки где написано one-two добавите Id своего элемента
-  function rechangeItem() {
-    document.getElementById('intro__text_es').style.opacity = '0';
-    document.getElementById('intro__text_rus').style.opacity = '1';
-  }// тут всё также. но наобарот. протсес происходящий про отводе курсора.
+let profileEdit = document.querySelector('.profileEdit__container');
+let popup = document.querySelector('.popup');
+let popupCross = document.querySelector('.popup__cross');
+let popupInframe = document.querySelector('.popup__inframe');
+let iventItems = document.querySelectorAll('.ivents__item');
+
+const arrInframes = {
+    '001': 'https://www.youtube.com/embed/dgQX4LSwpoE',
+    '002': 'https://www.youtube.com/embed/Ohl8mZKVTlk',
+    '003': 'https://www.youtube.com/embed/t-OkWxKsH_4',
+    '004': 'https://www.youtube.com/embed/V9N35ttYWxY',
+    '005': 'https://www.youtube.com/embed/XOMp2oexA_Q',
+    '006': 'https://www.youtube.com/embed/XOMp2oexA_Q',
+};
 
 
-  /*
-  function changeItem() {
-    document.getElementById('intro__text_rus').style.opacity = '1';
-  }// функция, которая сработает при наведении.
-  //она означает - выбрать элемент к Id у которого надо что-то изменить.
-  // когда в скобки где написано one-two добавите Id своего элемента
-  function rechangeItem() {
-    document.getElementById('intro__text_rus').style.opacity = '0';
-  }// тут всё также. но наобарот. протсес происходящий про отводе курсора.
+iventItems.forEach((elem) => {
+    elem.onclick = () => {
+        popupInframe.src = arrInframes[elem.id];
+        popup.style.display = 'flex';
+    }
+})
 
-  function changeItem() {
-    document.getElementById('intro__text_en').style.opacity = '1';
-  }// функция, которая сработает при наведении.
-  //она означает - выбрать элемент к Id у которого надо что-то изменить.
-  // когда в скобки где написано one-two добавите Id своего элемента
-  function rechangeItem() {
-    document.getElementById('intro__text_en').style.opacity = '0';
-  }// тут всё также. но наобарот. протсес происходящий про отводе курсора.
+popup.addEventListener('click', (evt) => {
+    if (evt.currentTarget !== popupInframe) {
+        popup.style.display = 'none';
+        popupInframe.src = null;
+        popupInframe.style.backgroundColor = "black";
+    }
+})
 
+function formSubmitHandler (evt) {
+    evt.preventDefault();
+    console.log('test');
+}
 
-  */
-
-  function text_es() {
-    document.getElementById('intro__text_rus').style.display = 'none';
-    document.getElementById('intro__text_en').style.display = 'none';
-    document.getElementById('intro__text_es').style.display = 'block';
-    document.getElementById('intro__language_rus').style.backgroundColor = 'grey';
-    document.getElementById('intro__language_rus').style.zIndex = '0';
-    document.getElementById('intro__language_rus').style.color = '#ffffff';
-    document.getElementById('intro__language_en').style.backgroundColor = 'grey';
-    document.getElementById('intro__language_en').style.zIndex = '0';
-    document.getElementById('intro__language_en').style.color = '#ffffff';
-    document.getElementById('intro__language_es').style.backgroundColor = 'rgb(230, 228, 222)';
-    document.getElementById('intro__language_es').style.zIndex = '2';
-    document.getElementById('intro__language_es').style.color = '#000';
-  }
-
-  function text_rus() {
-    document.getElementById('intro__text_en').style.display = 'none';
-    document.getElementById('intro__text_es').style.display = 'none';
-    document.getElementById('intro__text_rus').style.display = 'block';
-    document.getElementById('intro__language_es').style.backgroundColor = 'grey';
-    document.getElementById('intro__language_es').style.zIndex = '0';
-    document.getElementById('intro__language_es').style.color = '#ffffff';
-    document.getElementById('intro__language_en').style.backgroundColor = 'grey';
-    document.getElementById('intro__language_en').style.zIndex = '0';
-    document.getElementById('intro__language_en').style.color = '#ffffff';
-    document.getElementById('intro__language_rus').style.backgroundColor = 'rgb(230, 228, 222)';
-    document.getElementById('intro__language_rus').style.zIndex = '2';
-    document.getElementById('intro__language_rus').style.color = '#000';
-  }
-
-  function text_en() {
-    document.getElementById('intro__text_rus').style.display = 'none';
-    document.getElementById('intro__text_es').style.display = 'none';
-    document.getElementById('intro__text_en').style.display = 'block';
-    document.getElementById('intro__language_rus').style.backgroundColor = 'grey';
-    document.getElementById('intro__language_rus').style.zIndex = '0';
-    document.getElementById('intro__language_rus').style.color = '#ffffff';
-    document.getElementById('intro__language_es').style.backgroundColor = 'grey';
-    document.getElementById('intro__language_es').style.zIndex = '0';
-    document.getElementById('intro__language_es').style.color = '#ffffff';
-    document.getElementById('intro__language_en').style.backgroundColor = 'rgb(230, 228, 222)';
-    document.getElementById('intro__language_en').style.zIndex = '2';
-    document.getElementById('intro__language_en').style.color = '#000';
-  }
+profileEdit.addEventListener('submit', formSubmitHandler);
