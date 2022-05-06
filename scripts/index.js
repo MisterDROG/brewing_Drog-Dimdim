@@ -16,6 +16,7 @@ const arrInframes = {
 
 iventItems.forEach((elem) => {
     elem.onclick = () => {
+        console.log(popupInframe.src);
         popupInframe.src = arrInframes[elem.id];
         popup.style.display = 'flex';
     }
@@ -24,7 +25,7 @@ iventItems.forEach((elem) => {
 popup.addEventListener('click', (evt) => {
     if (evt.currentTarget !== popupInframe) {
         popup.style.display = 'none';
-        popupInframe.src = '';
+        popupInframe.src = './imgs/imgs_main/Blackflag.png';
     }
 })
 
