@@ -211,6 +211,7 @@
   height: 50vh;
   opacity: 1;
   border: 0;
+  background-color: black;
 }
 
 .popup__cross {
