@@ -25,6 +25,7 @@ popup.addEventListener('click', (evt) => {
     if (evt.currentTarget !== popupInframe) {
         popup.style.display = 'none';
         popupInframe.src = null;
+        popupInframe.style.backgroundColor = "black";
     }
 })
 
