@@ -6,6 +6,7 @@
     <link rel="stylesheet" href="./vendor/normalize.css"/>
     <link rel="stylesheet" href="./pages/main.css"/>
     <link rel="icon" href="./imgs/logo/logo_web.png" />
+    <script src="./scripts/main.js" defer></script>
     <title>How to brew</title>
   </head>
   <body>
@@ -36,7 +37,7 @@
 
         <section class="ivents">
             <div class="ivents__grid">
-              <div class="ivents__item">
+              <div class="ivents__item" id="001">
                 <img class="ivents__img" src="./imgs/imgs_main/Firstbeer.jpg">
                 <div class="ivents__hover"></div>
                 <h2 class="ivent__title">КАК СВАРИТЬ ПИВО?</h2>
@@ -44,7 +45,7 @@
                 <p class="ivent__date">02.12.21</p>
               </div>
 
-              <div class="ivents__item">
+              <div class="ivents__item" id="002">
                 <img class="ivents__img" src="./imgs/imgs_main/OpenBrew.jpg">
                 <div class="ivents__hover"></div>
                 <h2 class="ivent__title">КАК ОТКРЫТЬ ПИВОВАРНЮ</h2>
@@ -52,7 +53,7 @@
                 <p class="ivent__date">15.01.22</p>
               </div>
 
-              <div class="ivents__item">
+              <div class="ivents__item" id="003">
                 <img class="ivents__img" src="./imgs/imgs_main/Overview.jpg">
                 <div class="ivents__hover"></div>
                 <h2 class="ivent__title">КАК ВЫБРАТЬ ПИВОВАРНЮ?</h2>
@@ -60,7 +61,7 @@
                 <p class="ivent__date">03.03.22</p>
               </div>
 
-              <div class="ivents__item">
+              <div class="ivents__item" id="004">
                 <img class="ivents__img" src="./imgs/imgs_main/MeadBeer.jpg">
                 <div class="ivents__hover"></div>
                 <h2 class="ivent__title">ГОТОВИМ МЕДОВУХУ</h2>
@@ -68,7 +69,7 @@
                 <p class="ivent__date">11.04.22</p>
               </div>
 
-              <div class="ivents__item">
+              <div class="ivents__item" id="005">
                 <img class="ivents__img" src="./imgs/imgs_main/BlackWhite.jpg">
                 <div class="ivents__hover"></div>
                 <h2 class="ivent__title">ТЕМНОЕ И СВЕТЛОЕ</h2>
@@ -76,7 +77,7 @@
                 <p class="ivent__date">19.05.22</p>
               </div>
 
-              <div class="ivents__item">
+              <div class="ivents__item" id="006">
                 <img class="ivents__img" src="./imgs/imgs_main/BestSsckrBeer.jpg">
                 <div class="ivents__hover"></div>
                 <h2 class="ivent__title">СТРИМ: Любимое пиво</h2>
@@ -86,6 +87,10 @@
 
             </div>
 
+            <div class="popup">
+              <iframe class="popup__inframe" id="ytplayer" type="text/html" src="" allowfullscreen></iframe>
+              <img class="popup__cross" src="./imgs/imgs_main/CloseIcon.png" alt="cross">
+            </div>
 
 
         </section>
@@ -100,9 +105,7 @@
             <input class="profileEdit__subtitleInput" type="email"  placeholder="Ваша почта">
             <img class="profileEdit__line" src="./imgs/imgs_main/header-line.png" alt="line">
             <button class="profileEdit__button-submit" type="submit">Отправить</button>
-        </form>
-
-
+          </form>
         </section>
 
       </main>
