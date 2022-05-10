@@ -1,0 +1,10 @@
+.page {
+  box-sizing: border-box;
+  margin: 0 auto;
+  padding: 0;
+  min-width: 320px;
+  max-width: 1440px;
+  font-family: "Inter", Arial, Helvetica, sans-serif;
+  text-rendering: optimizeLegibility;
+  overflow-y: scroll;
+}
