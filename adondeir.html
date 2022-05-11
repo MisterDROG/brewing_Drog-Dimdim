@@ -8,7 +8,6 @@
     <title>How to brew</title>
   </head>
   <body class="page">
-
     <header class="header">
       <div class="header__container">
         <a href="./index.html" class="header__logo">
@@ -38,9 +37,34 @@
     </header>
 
     <main class="content">
-      
+
+
+      <section class="brewing__simulator">
+        <h1 class="brewing__title">Симулятор варки</h1>
+        <div class="brewing__tables">
+          <div class="brewing__bottle">
+            <div class="brewing__bottle_empty"></div>
+          </div>
+
+          <div class="brewing__table">
+            <button class="brewing__button brewing__button_agua2L">Налить 1-2 литра воды</button>
+            <button class="brewing__button brewing__button_suslo">Добавить сусло</button>
+            <button class="brewing__button brewing__button_heating">Довести до кипения</button>
+            <button class="brewing__button brewing__button_agua19L">Добавить 19 литров воды</button>
+            <button class="brewing__button brewing__button_weat">Засеять дрожжи</button>
+            <button class="brewing__button">Оставить сусло бродить</button>
+            <button class="brewing__button">Разлить по бутылкам</button>
+          </div>
+        </div>
+        <template id="suslo"><div class="brewing__suslo"></div></template>
+        <template id="agua19L"><div class="brewing__agua19L"></div></template>
+        <template id="agua2L"><div class="brewing__agua2L"></div></template>
+        <template id="heating"><div class="brewing__heating"></div></template>
+        <template id="weat"><div class="brewing__weat"></div></template>
+      </section>
     </main>
 
     <script src="./scripts/header.js"></script>
+    <script src="./scripts/adondeir.js"></script>
   </body>
 </html>
