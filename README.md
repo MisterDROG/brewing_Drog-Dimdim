@@ -13,4 +13,4 @@ The site was developed for a home brewery, which planned to attract subscribers 
 
 This project received the first version and further development was planned, but due to the closure of the brewery it was not used. Thus, with the permission of the client, the site became a personal pet project for portfolio.
 
-The site was developed by Igor Drogaytsev and Dmitry Shishkov.
+https://misterdrog.github.io/brewing_Drog-Dimdim/
