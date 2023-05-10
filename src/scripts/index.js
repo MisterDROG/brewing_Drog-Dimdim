@@ -1,3 +1,5 @@
+import '../components/pages/index.css'
+
 let profileEdit = document.querySelector('.profileEdit__container');
 let popup = document.querySelector('.popup');
 let popupCross = document.querySelector('.popup__cross');
