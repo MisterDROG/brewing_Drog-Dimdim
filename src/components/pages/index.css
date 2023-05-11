@@ -269,4 +269,8 @@
     font-size: 19px;
   }
 
+  .lead__gradient {
+    height: 150px;
+  }
+
 }

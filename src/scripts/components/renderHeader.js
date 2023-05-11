@@ -1,6 +1,7 @@
 import boizLogo from '../../imgs/logo/boiz_logo.png'
 import menuButtonC from '../../imgs/logo/menuButton.jpg'
 
+//function for render header
 const renderHeader = () => {
     const headerContainer = document.querySelector('.header');
 
@@ -19,8 +20,8 @@ const renderHeader = () => {
                 <a href="./shop.html" target="_self" class="header__link">Магазин</a>
             </nav>`)
 
+        //event listeners for mobile menu open/close
         const menuButton = document.querySelector('.header__button');
-
         menuButton.addEventListener('click', (e) => {
             e.preventDefault()
             let menuLinks = document.querySelector('.header__links');
@@ -29,9 +30,7 @@ const renderHeader = () => {
             } else {
                 menuLinks.style.display = 'flex'
             }
-            
         })
-
 }
 
 export default renderHeader

@@ -1,6 +1,7 @@
 import VKLogo from '../../imgs/logo/logo_social/vk.png'
 import TelegramLogo from '../../imgs/logo/logo_social/Telegram.png'
 
+//function for render footer
 const renderFooter = () => {
     const footerContainer = document.querySelector('.footer');
 
