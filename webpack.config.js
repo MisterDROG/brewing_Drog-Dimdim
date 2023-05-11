@@ -52,6 +52,7 @@
         new HTMLWebpackPlugin({
             filename: 'shop.html',
             template: './pages/shop.html',
+            chunks: ['shop'],
             minify: {
                 collapseWhitespace: true
             }
@@ -59,6 +60,7 @@
         new HTMLWebpackPlugin({
             filename: 'where.html',
             template: './pages/where.html',
+            chunks: ['where'],
             minify: {
                 collapseWhitespace: true
             }
@@ -66,13 +68,14 @@
         new HTMLWebpackPlugin({
             filename: 'glasses.html',
             template: './pages/glasses.html',
+            chunks: ['glasses'],
             minify: {
                 collapseWhitespace: true
             }
         }),
         new CleanWebpackPlugin(),
         new MiniCssExtractPlugin({
-            filename: '[name].css',
+            filename: 'styles/[name].css',
         })
     ],
     module: {

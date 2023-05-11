@@ -8,6 +8,7 @@ The site was developed using technologies:
 - Grid layout
 - Adaptability
 - Javascript
+- Figma - creating logos and design
 
 The site was developed for a home brewery, which planned to attract subscribers to their social networks through it. Working closely with the client, we actively participated in the development of the concepts of content and the appearance of the site.
 

@@ -1,4 +1,6 @@
 import '../components/pages/index.css'
+import renderFooter from './components/renderFooter'
+import renderHeader from './components/renderHeader'
 
 let profileEdit = document.querySelector('.profileEdit__container');
 let popup = document.querySelector('.popup');
@@ -15,6 +17,8 @@ const arrInframes = {
     '006': 'https://www.youtube.com/embed/XOMp2oexA_Q',
 };
 
+renderFooter()
+renderHeader()
 
 iventItems.forEach((elem) => {
     elem.onclick = () => {

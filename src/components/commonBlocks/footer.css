@@ -4,23 +4,25 @@
     flex-direction: row;
     overflow: hidden;
     margin: 0 auto;
+    padding: 30px 0 0 0;
     justify-content: space-between;
     background-color: #000;
 }
 
 .footer__author {
-    width: 30%;
+    width: auto;
     height: 100%;
     color: #fff;
     text-align: center;
     text-decoration: none;
-    margin: auto auto 10px 10px;
+    margin: auto auto 20px;
     -webkit-transition: all 0.3s ease;
     -moz-transition: all 0.3s ease;
     -o-transition: all 0.3s ease;
     transition: all 0.3s ease;
     opacity: 1;
     font-size: 20px;
+    white-space: nowrap;
 }
 
 .footer__author:hover {
@@ -59,6 +61,7 @@
     -o-transition: all 0.3s ease;
     transition: all 0.3s ease;
     opacity: 1;
+    white-space: nowrap;
 }
 
 .footer__link:hover {
@@ -69,4 +72,28 @@
     width: 15px;
     height: 15px;
     margin: auto 5px;
+}
+
+@media screen and (max-width: 720px) {
+    .footer {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer__columns {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer__column {
+        align-items: center;
+    }
+
+    .footer__author {
+        margin: 10px 10px 10px 10px;
+    }
+
+    .footer__link {
+        text-align: center;
+    }
 }
