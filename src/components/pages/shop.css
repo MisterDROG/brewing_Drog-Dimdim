@@ -1,0 +1,18 @@
+@import url("../../vendor/normalize.css");
+@import url("../commonBlocks/header.css");
+@import url("../commonBlocks/footer.css");
+
+
+.page {
+  min-width: 868px;
+  max-width: 100vw;
+  margin: 0 auto;
+  font-family: "Helvetica Neue", Arial, sans-serif;
+}
+
+.content {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+}

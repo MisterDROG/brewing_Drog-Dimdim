@@ -9,12 +9,16 @@
     context: path.resolve(__dirname, 'src'),
     mode: 'development',
     entry: {
-        index: ['@babel/polyfill' ,'./scripts/index.js']
+        index: ['@babel/polyfill' ,'./scripts/index.js'],
+        classification: ['@babel/polyfill' ,'./scripts/classification.js'],
+        where: ['@babel/polyfill' ,'./scripts/where.js'],
+        glasses: ['@babel/polyfill' ,'./scripts/glasses.js'],
+        shop: ['@babel/polyfill' ,'./scripts/shop.js'],
     },
     output: {
         filename: '[name].js',
         path: path.resolve(__dirname, 'dist'),
-        assetModuleFilename: 'assets/images/[name][ext]'
+        assetModuleFilename: 'images/[name][ext]'
     },
     optimization: {
         splitChunks: {
@@ -30,7 +34,38 @@
     },
     plugins: [
         new HTMLWebpackPlugin({
+            filename: 'index.html',
             template: './pages/index.html',
+            chunks: ['index'],
+            minify: {
+                collapseWhitespace: true
+            }
+        }),
+        new HTMLWebpackPlugin({
+            filename: 'classification.html',
+            template: './pages/classification.html',
+            chunks: ['classification'],
+            minify: {
+                collapseWhitespace: true
+            }
+        }),
+        new HTMLWebpackPlugin({
+            filename: 'shop.html',
+            template: './pages/shop.html',
+            minify: {
+                collapseWhitespace: true
+            }
+        }),
+        new HTMLWebpackPlugin({
+            filename: 'where.html',
+            template: './pages/where.html',
+            minify: {
+                collapseWhitespace: true
+            }
+        }),
+        new HTMLWebpackPlugin({
+            filename: 'glasses.html',
+            template: './pages/glasses.html',
             minify: {
                 collapseWhitespace: true
             }

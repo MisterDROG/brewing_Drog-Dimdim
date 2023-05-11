@@ -1,3 +1,5 @@
+import '../components/pages/where.css'
+
 function changeItem() {
     document.getElementById('intro__text_es').style.opacity = '1';
     document.getElementById('intro__text_rus').style.opacity = '0';
