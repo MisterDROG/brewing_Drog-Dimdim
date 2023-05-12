@@ -22,13 +22,22 @@ const renderHeader = () => {
 
         //event listeners for mobile menu open/close
         const menuButton = document.querySelector('.header__button');
+        const menuLinks = document.querySelector('.header__links');
         menuButton.addEventListener('click', (e) => {
             e.preventDefault()
-            let menuLinks = document.querySelector('.header__links');
             if (menuLinks.style.display == 'flex') {
                 menuLinks.style.display = 'none'
             } else {
                 menuLinks.style.display = 'flex'
+            }
+        })
+
+        //event listeners for mobile menu open/close (while window resize)
+        window.addEventListener('resize', () => {
+            if (window.innerWidth >= 720) {
+                menuLinks.style.display = 'flex'
+            } else if (window.innerWidth < 720) {
+                menuLinks.style.display = 'none'
             }
         })
 }

@@ -158,6 +158,7 @@
   height: 400px;
   opacity: 1;
   border: 0;
+  margin-right: -25px;
 }
 
 .popup__cross {
@@ -165,7 +166,7 @@
   height: 25px;
   position: relative;
   top: -220px;
-  right: 25px;
+  right: 0px;
   cursor: pointer;
 }
 
@@ -265,6 +266,23 @@
     grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
   }
 
+  .ivents__item {
+    height: 200px;
+  }
+
+  .ivents__img {
+    height: 200px;
+  }
+
+  .popup__inframe {
+    width: 80%;
+    height: 200px;
+  }
+
+  .popup__cross {
+    top: -120px;
+  }
+
   .profileEdit__title {
     font-size: 19px;
   }
@@ -272,5 +290,4 @@
   .lead__gradient {
     height: 150px;
   }
-
 }
