@@ -82,14 +82,8 @@
   box-sizing: border-box;
   gap: 20px;
   transition: .1s linear;
-  border: 1px solid grey;
-  border-radius: 30px;
-}
-
-.goods-grid__flex-item:hover {
-  border: 1px solid grey;
-  box-shadow: 10px 10px 5px grey;
-  border-radius: 30px;
+  border: 1px solid lightgray;
+  border-radius: 15px;
 }
 
 .goods-grid__img {
@@ -109,25 +103,25 @@
 }
 
 .goods-grid__link {
+  width: 100%;
   border: 0;
   background-color: transparent;
-
 }
 
 .goods-grid__button {
+  width: 100%;
   border: 0;
-  border-radius: 30px;
+  border-radius: 15px;
   background-color: black;
   color: white;
   font-weight: 600;
   padding: 15px 35px;
-  transition: .2s linear;
 }
 
 .goods-grid__button:hover {
   background-color: greenyellow;
   color: black;
-  box-shadow: 10px 10px 5px grey;
+  box-shadow: 5px 5px 5px grey;
 }
 
 @media screen and (max-width: 720px) {

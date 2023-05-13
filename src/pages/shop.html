@@ -11,58 +11,188 @@
 <body>
   <div class="page">
     <header class="header">
-      <a href="./index.html" target="_self" class="header__img">
-        <img class="logo__header" alt="logo BOIZ BREWERY" src="../imgs/logo/boiz_logo.png" />
-      </a>
-      <nav class="header__links">
-        <a href="./index.html" target="_self" class="header__link">Главная</a>
-        <a href="./where.html" target="_self" class="header__link">Куда пойти</a>
-        <a href="./classification.html" target="_self" class="header__link">Виды пива</a>
-        <a href="./glasses.html" target="_self" class="header__link">Виды бокалов</a>
-      </nav>
     </header>
 
     <main class="content">
       <div class="container">
-        <div class="content__text">
-          <p>
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-            Eveniet, enim. Quae recusandae reiciendis repellat earum sunt numquam consequatur deleniti?
-            Deleniti asperiores excepturi corrupti aperiam, quo impedit sit sapiente commodi sequi!
-          </p>
-          <p>
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-            Eveniet, enim. Quae recusandae reiciendis repellat earum sunt numquam consequatur deleniti?
-            Deleniti asperiores excepturi corrupti aperiam, quo impedit sit sapiente commodi sequi!
-          </p>
-          <p>
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-            Eveniet, enim. Quae recusandae reiciendis repellat earum sunt numquam consequatur deleniti?
-            Deleniti asperiores excepturi corrupti aperiam, quo impedit sit sapiente commodi sequi!
-          </p>
+        <h3 class="lead__subtype">Наше пиво</h3>
+        <p class="lead__definition">На данный момент мы не продаём нашу продукцию, но рады показать вам, что
+          варим мы. Цена отражает лишь себестоимость.
+        </p>
+      </div>
+
+      <div class="container">
+        <div class="control-wrapper">
+          <div class="catalog-button">
+            <button>
+              <span class="catalog-button_burger"></span>
+              <span class="catalog-button_text">Каталог</span>
+            </button>
+            <div class="catalog">
+              <ul class="catalog-list">
+                <li>Лагер</li>
+                <li>Пилзнер</li>
+                <li>Сидр</li>
+              </ul>
+            </div>
+          </div>
+          <div class="search">
+            <div class="search-wrapper">
+              <input class="search-wrapper_input" type="text" />
+            </div>
+            <div class="search-btn">
+              <button></button>
+            </div>
+          </div>
+          <a href="#" id="cart">
+            <span class="counter">0</span>
+            <img class="cart-img" alt='cart' src="../imgs/logo/shoppingCart.png">
+            <span class="desc">Корзина</span>
+          </a>
         </div>
       </div>
+
+      <div class="container">
+        <div class="filter">
+          <form class="filter-price">
+            <p class="filter-price_title">Цена</p>
+            <div class="filter-price_input-wrapper">
+              <label for="min" class="filter-price_label">от</label>
+              <input id="min" class="filter-price_input">
+            </div>
+            <div class="filter-price_input-wrapper">
+              <label for="max" class="filter-price_label">до</label>
+              <input id="max" class="filter-price_input">
+            </div>
+          </form>
+          <div class="filter-check">
+            <label class="filter-check_label">
+              <input type="checkbox" class="filter-check_checkbox" id="discount-checkbox">
+              <span class="filter-check_checkmark"></span>
+              <span class="filter-check_label-text">New product</span>
+            </label>
+          </div>
+        </div>
+      </div>
+
+
+
+      <div class="container">
+        <div class="goods">
+          <!-- КАРТОЧКИ ТОВАРОВ -->
+          <div class="card">
+            <div class="card-img-wrapper">
+              <span class="card-img-top"
+                style="background-image: url('https://cdn1.ozone.ru/multimedia/c400/1033180284.jpg')"></span>
+            </div>
+            <div class="card-body">
+              <div class="card-price">33990 ₽</div>
+              <h5 class="card-title">Игровая приставка Sony PlayStation 4 Pro</h5>
+              <button class="btn">В корзину</button>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="card-sale">🔥NEW🔥</div>
+            <div class="card-img-wrapper">
+              <span class="card-img-top"
+                style="background-image: url('https://cdn1.ozone.ru/multimedia/c400/1027495663.jpg')"></span>
+            </div>
+            <div class="card-body">
+              <div class="card-price">16499 ₽</div>
+              <h5 class="card-title">Игровая приставка Sony PlayStation 3 Super Slim</h5>
+              <button class="btn btn-primary">В корзину</button>
+            </div>
+          </div>
+
+
+          <div class="card">
+            <div class="card-img-wrapper">
+              <span class="card-img-top"
+                style="background-image: url('https://cdn1.ozone.ru/multimedia/c400/1024358491.jpg')"></span>
+            </div>
+            <div class="card-body">
+              <div class="card-price">39990 ₽</div>
+              <h5 class="card-title">Игровая приставка Xbox One X</h5>
+              <button class="btn btn-primary">В корзину</button>
+            </div>
+          </div>
+
+
+          <div class="card">
+            <div class="card-sale">🔥NEW🔥</div>
+            <div class="card-img-wrapper">
+              <span class="card-img-top"
+                style="background-image: url('https://cdn1.ozone.ru/multimedia/c400/1024822131.jpg')"></span>
+            </div>
+            <div class="card-body">
+              <div class="card-price">23411 ₽</div>
+              <h5 class="card-title">Игровая приставка Xbox One S</h5>
+              <button class="btn btn-primary">В корзину</button>
+            </div>
+          </div>
+
+
+          <div class="card">
+            <div class="card-img-wrapper">
+              <span class="card-img-top"
+                style="background-image: url('https://cdn1.ozone.ru/multimedia/c400/1021386685.jpg')"></span>
+            </div>
+            <div class="card-body">
+              <div class="card-price">24751 ₽</div>
+              <h5 class="card-title">Игровая приставка Nintendo Switch</h5>
+              <button class="btn btn-primary">В корзину</button>
+            </div>
+          </div>
+
+
+          <div class="card">
+            <div class="card-sale">🔥NEW🔥</div>
+            <div class="card-img-wrapper">
+              <span class="card-img-top"
+                style="background-image: url('https://cdn1.ozone.ru/multimedia/c400/1024928305.jpg')"></span>
+            </div>
+            <div class="card-body">
+              <div class="card-price">3624 ₽</div>
+              <h5 class="card-title">Игровая приставка Sega Retro Genesis HD</h5>
+              <button class="btn btn-primary">В корзину</button>
+            </div>
+          </div>
+
+
+          <div class="card">
+            <div class="card-sale">🔥NEW🔥</div>
+            <div class="card-img-wrapper">
+              <span class="card-img-top"
+                style="background-image: url('https://cdn1.ozone.ru/multimedia/c400/1021877092.jpg')"></span>
+            </div>
+            <div class="card-body">
+              <div class="card-price">1551 ₽</div>
+              <h5 class="card-title">Игровая приставка Dendy Junior</h5>
+              <button class="btn btn-primary">В корзину</button>
+            </div>
+          </div>
+
+
+          <div class="card">
+            <div class="card-img-wrapper">
+              <span class="card-img-top"
+                style="background-image: url('https://cdn1.ozone.ru/multimedia/c400/1025222877.jpg')"></span>
+            </div>
+            <div class="card-body">
+              <div class="card-price">10445 ₽</div>
+              <h5 class="card-title">Игровая приставка Sony PlayStation Classic</h5>
+              <button class="btn btn-primary">В корзину</button>
+            </div>
+          </div>
+
+          <!-- END КАРТОЧКИ ТОВАРОВ -->
+        </div>
+      </div>
+
     </main>
 
     <footer class="footer">
-      <a href="#" target="_blank" class="footer__author">&copy; BOIZ Brewery</a>
-      <div class="footer__columns">
-        <nav class="footer__column">
-          <p class="footer__title">Контакты</p>
-          <a href="#" target="_blank" class="footer__link"><img src="../imgs/logo/logo_social/Telegram.png"
-              class="footer__link_img" alt="telegram" />Telegram</a>
-          <a href="#" target="_blank" class="footer__link"><img src="../imgs/logo/logo_social/vk.png"
-              class="footer__link_img" alt="VK" />VKontakte</a>
-          <a href="#" target="_blank" class="footer__link"><img src="../imgs/logo/logo_social/vk.png"
-              class="footer__link_img" alt="VK" />VK Public</a>
-        </nav>
-        <nav class="footer__column">
-          <p class="footer__title">Навигация</p>
-          <a href="./index.html" target="_blank" class="footer__link">Главная</a>
-          <a href="./where.html" target="_blank" class="footer__link">Куда пойти</a>
-          <a href="./classification.html" target="_blank" class="footer__link">Немного о Пиве</a>
-        </nav>
-      </div>
     </footer>
 
   </div>
