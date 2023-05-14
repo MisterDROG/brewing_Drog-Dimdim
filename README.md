@@ -1,4 +1,6 @@
-Website dedicated to beer culture for a private home brewery.
+Website dedicated to beer culture for BOIZ brewery.
+
+The site was developed for a home brewery, which planned to attract subscribers to their social networks through it. Working closely with the client, we with second developer actively participated in the development of the concepts of content, appearance of the site and code.
 
 The site was developed using technologies:
 
@@ -6,12 +8,11 @@ The site was developed using technologies:
 - CSS
 - Flex layout
 - Grid layout
-- Adaptability
-- Javascript
-- Figma - creating logos and design
+- Adaptability for mobile devices
+- JS ES6
+- Webpack
+- Figma for creating logos and design
 
-The site was developed for a home brewery, which planned to attract subscribers to their social networks through it. Working closely with the client, we actively participated in the development of the concepts of content and the appearance of the site.
-
-This project received the first version and further development was planned, but due to the closure of the brewery it was not used. Thus, with the permission of the client, the site became a personal pet project for portfolio.
+With the permission of the client, the site came to my personal portfolio.
 
 https://misterdrog.github.io/brewing_Drog-Dimdim/

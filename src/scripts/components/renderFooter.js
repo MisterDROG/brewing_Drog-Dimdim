@@ -19,9 +19,9 @@ const renderFooter = () => {
             </nav>
             <nav class="footer__column">
                 <p class="footer__title">Навигация</p>
-                <a href="./index.html" target="_blank" class="footer__link">Главная</a>
-                <a href="./where.html" target="_blank" class="footer__link">Куда пойти</a>
-                <a href="./shop.html" target="_blank" class="footer__link">Магазин</a>
+                <a href="./index.html" target="_self" class="footer__link">Главная</a>
+                <a href="./where.html" target="_self" class="footer__link">Куда пойти</a>
+                <a href="./shop.html" target="_self" class="footer__link">Магазин</a>
             </nav>
         </div>`)
 
