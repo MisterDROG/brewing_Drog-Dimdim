@@ -13,6 +13,6 @@ The site was developed using technologies:
 - Webpack
 - Figma for creating logos and design
 
-With the permission of the client, the site came to my personal portfolio.
+With the permission of the client, the site came to my personal portfolio..
 
 https://misterdrog.github.io/brewing_Drog-Dimdim/
