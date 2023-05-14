@@ -1,4 +1,4 @@
-import {priceFilter, hotsaleFilter} from "./searchFilter"
+import {priceFilter, newFilter} from "./searchFilter"
 import getDataPH from "./getData"
 import renderGoods from './renderGoods'
 
@@ -11,19 +11,19 @@ const filter = () => {
     checkBox.addEventListener('change', () => {
         checkBoxicon.classList.toggle('checked')
         getDataPH().then((data) => {
-            renderGoods(priceFilter(hotsaleFilter(data, checkBox.checked), minPrice.value, maxPrice.value));
+            renderGoods(priceFilter(newFilter(data, checkBox.checked), minPrice.value, maxPrice.value));
         })
     })
 
     minPrice.addEventListener('input', () => {
         getDataPH().then((data) => {
-            renderGoods(priceFilter(hotsaleFilter(data, checkBox.checked), minPrice.value, maxPrice.value));
+            renderGoods(priceFilter(newFilter(data, checkBox.checked), minPrice.value, maxPrice.value));
         })
     })
 
     maxPrice.addEventListener('input', () => {
         getDataPH().then((data) => {
-            renderGoods(priceFilter(hotsaleFilter(data, checkBox.checked), minPrice.value, maxPrice.value));
+            renderGoods(priceFilter(newFilter(data, checkBox.checked), minPrice.value, maxPrice.value));
         })
     })
 }

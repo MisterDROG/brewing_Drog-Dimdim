@@ -1,18 +1,14 @@
 import getDataPH from "./getData";
-import postDataPH from "./postData";
 import renderGoods from './renderGoods'
 
 const renderPage = () => {
+    const cartCounter = document.querySelector('.counter')
+    cartCounter.textContent = JSON.parse(localStorage.getItem('cart')).length
 
     getDataPH().then((data) => {
             renderGoods(data);
             })
 
-    // cartBtn.addEventListener('click', () => {
-    //     postDataPH().then((data) => {
-    //         console.log(data);
-    //     })
-    // })
 }
 
 export default renderPage

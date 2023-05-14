@@ -24,10 +24,10 @@ export const priceFilter = (data, min, max) => {
     })
 }
 
-export const hotsaleFilter = (data, value) => {
+export const newFilter = (data, value) => {
     return data.filter((item) => {
         if (value) {
-            return item.sale === true; 
+            return item.new === true; 
         } else return item;
     })
 }

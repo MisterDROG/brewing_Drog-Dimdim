@@ -16,7 +16,7 @@ const renderGoods = (data) => {
                 <div class="card-price">${item.price} ₽</div>
                 <h5 class="card-title">"${item.title}"</h5>
                 <h5 class="card-subtitle">${item.subtitle}</h5>
-                <button class="btn">В корзину</button>
+                <button class="btn btn-primary">В корзину</button>
             </div>
         </div>`)
 

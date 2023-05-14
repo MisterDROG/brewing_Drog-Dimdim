@@ -13,8 +13,6 @@ import cart from './components/shopComponents/cart'
 renderFooter()
 renderHeader()
 
-
-
 renderPage();
 search();
 catalog();

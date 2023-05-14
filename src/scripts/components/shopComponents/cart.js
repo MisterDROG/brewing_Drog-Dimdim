@@ -12,7 +12,6 @@ const cart = () => {
     const cartCounter = document.querySelector('.counter')
 
 
-
     const openCart = () => {
         cartModal.style.display = 'flex'
         const cart = localStorage.getItem('cart') ? JSON.parse(localStorage.getItem('cart')) : [];
@@ -43,15 +42,8 @@ const cart = () => {
             cart.push(goodItem)
             localStorage.setItem('cart', JSON.stringify(cart))
 
-            // cartCounter.textContent = cart.reduce((sum, goodsItem) => {
-            //     return sum + 1
-            // },0)
-
             cartCounter.textContent = Number(cartCounter.textContent) + 1
-            
         }
-
-
     })
 
     cartContainer.addEventListener('click', (evt) => {
@@ -64,7 +56,6 @@ const cart = () => {
             })
 
             cart.splice(index, 1)
-
 
             localStorage.setItem('cart', JSON.stringify(cart))
 
@@ -83,11 +74,8 @@ const cart = () => {
         const cart = localStorage.getItem('cart') ? JSON.parse(localStorage.getItem('cart')) : [];
         postDataPH(cart).then(() => {
             localStorage.removeItem('cart')
-
             renderCart([])
-
             cartTotal.textContent = 0
-
             cartCounter.textContent = 0
         })
     })
