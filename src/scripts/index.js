@@ -24,7 +24,7 @@ profileEdit.addEventListener('submit', formSubmitHandler);
 popup.addEventListener('click', (evt) => {
     if (evt.currentTarget !== popupInframe) {
         popup.style.display = 'none';
-        popupInframe.src = './imgs/imgs_main/Blackflag.png';
+        popupInframe.src = 'https://lh3.google.com/u/0/d/11qQjgP2Ng8ywj8Uv7MrSwZchFWQB57ef=w1683-h1367-iv1';
     }
 })
 
