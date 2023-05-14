@@ -4,7 +4,7 @@
     flex-direction: row;
     overflow: hidden;
     margin: 0 auto;
-    padding: 30px 0 0 0;
+    padding: 10px 0 0 0;
     justify-content: space-between;
     background-color: #000;
 }
@@ -68,7 +68,7 @@
 
 @media screen and (max-width: 720px) {
     .footer {
-        flex-direction: column;
+        flex-direction: column-reverse;
         align-items: center;
     }
 
