@@ -5,6 +5,12 @@ const renderGoods = (data) => {
 
     localStorage.setItem('goods', JSON.stringify(data))
 
+    if (data.length === 0) {
+        goodsContainer.insertAdjacentHTML('beforeend', `
+        <div id="goods-empty">
+        К сожалению, такой продукции нет.
+        </div>`)
+    } else {
      data.forEach((item) => {
         goodsContainer.insertAdjacentHTML('beforeend', `
         <div class="card" data-key="${item.id}">
@@ -21,7 +27,7 @@ const renderGoods = (data) => {
         </div>`)
 
      })
-
+    }
 }
 
 export default renderGoods
