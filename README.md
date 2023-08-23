@@ -19,6 +19,7 @@ The site was developed using technologies:
 - Adaptability for mobile devices
 - JS ES6
 - Webpack
+- Jest
 - Figma for creating logos and design
 
 With the permission of the client, the site came to my personal portfolio.
